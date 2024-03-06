@@ -24,7 +24,23 @@ void Func1(int N)
 	printf("%d\n", count);
 }
 
+void Func2(int N)
+{
+	int count = 0;
+	for (int k = 0; k < 2 * N; ++k)
+	{
+		++count;
+	}
+	int M = 10;
+	while (M--)
+	{
+		++count;
+	}
+	printf("%d\n", count);
+}
+
 int main()
 {
 	Func1(2);
+	Func2(2);
 }
