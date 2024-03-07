@@ -39,8 +39,24 @@ void Func2(int N)
 	printf("%d\n", count);
 }
 
+void Func3(int N, int M)
+{
+	int count = 0;
+	int k = 0;
+	for (k = 0; k < M; ++k)
+	{
+		++count;
+	}
+	for (int k = 0; k < N; ++k)
+	{
+		++count;
+	}
+	printf("%d\n", count);
+}
+
 int main()
 {
 	Func1(2);
 	Func2(2);
+	Func3(2,2);
 }
