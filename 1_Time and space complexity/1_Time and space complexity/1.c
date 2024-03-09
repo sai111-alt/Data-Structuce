@@ -64,6 +64,19 @@ void Fun4(int N)
 	printf("%d\n", count);
 }
 
+const char* strchr(const char* str, char character)
+{
+	while (*str != '\0')
+	{
+		if (*str == character)
+		{
+			return str;
+		}
+		++str;
+	}
+	return NULL;
+}
+
 int main()
 {
 	Func1(2);
